@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap and Javascript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body class="container-fluid">
+        <header class="jumbotron">
+            <div class="row">
+                <div class="column mx-auto">
+                    <h1>Computer Engineering Technology - Web Programming</h1>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="column p-3" style="min-width: 10%">
+                <ul class="nav flex-column jumbotron">
+                    <li class="nav-item">
+                        <a class="nav-link"href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="../Lab2/index.html">Lab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="../Lab3/index.html">Lab 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="content" class="column mx-auto" style="width: 50%">
+                <script> 
+                    $("#content").load("TemperatureConverter.html"); 
+                </script>
+            </div>
+        </div>
+        <footer class="jumbotron">
+            Neil<br>
+            Kingdom<br>
+            040967309<br>
+            <a href="mailto:king0482@algonquinlive.com">king0482@algonquinlive.com</a>
+        </footer>
+    </body>
+</html>

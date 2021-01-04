@@ -1,0 +1,47 @@
+#header {
+    color: white;
+    margin: 5px;
+    padding-left: 50px;
+}
+
+#content {
+    width: 87%;
+    color: white;
+    margin: 5px;
+    margin-right: 1%;
+    padding: 50px;
+    background-color: rgb(94, 94, 94);
+    border-radius: 5px;
+}
+
+#menu {
+    width: 10%;
+    min-width: 5%;
+    overflow-x: auto;
+    color: white;
+    margin: 5px;
+    margin-left: 1%;
+    padding: 20px;
+    background-color: rgb(94, 94, 94);
+    border-radius: 5px;
+}
+
+#footer {
+    color: white;
+    margin: 5px;
+    padding-left: 50px;
+}
+
+.white * {
+    color: white;
+}
+
+a:visited {
+    color: purple;
+}
+
+br {   
+    content: "A" !important;
+    display: block !important;
+    border-bottom: solid 1pt white !important;
+}

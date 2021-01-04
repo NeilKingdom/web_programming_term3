@@ -1,0 +1,60 @@
+#header {
+    height: 5%;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(102, 153, 255);
+}
+
+#footer {
+    bottom: 0; 
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    padding: 3%;
+    background-color: rgb(0, 102, 225);
+}
+
+#menu {
+    position: fixed;
+    height: 500px;
+    width: 14%;
+    margin: 1%;
+    padding-left: 25px;
+    padding-top: 25px;
+    border-radius: 10px;
+    overflow-x: auto;
+    background-color: rgb(102, 153, 267);
+    filter: drop-shadow(20px 10px 4px #000000);
+}
+
+#content {
+    height: 85%;
+    padding: 50px;
+    padding-bottom: 33%; /*Leave at least 33% between content and footer*/
+    margin-left: 17%;
+    color: white;
+}
+
+body {    
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    overflow-x: hidden;
+    background-color: rgb(0, 25, 100);
+}
+
+.pattern {
+    height: 85%;
+    padding: 50px;
+    padding-bottom: 28%; 
+    margin-left: 17%;
+    color: yellow;
+    overflow: hidden;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}

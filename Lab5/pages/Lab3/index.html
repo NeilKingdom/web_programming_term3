@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en" charset="UTF-8"/>
+        <title>CSS Examples</title>
+        <link rel="stylesheet" href="StyleSheet.css"/>
+    </head>
+    <body>
+        <header id="header">
+            <img src="CSS_Logo.png" height="100px" width="100px" alt="mountain logo"/>
+            <h3>
+                Computer Engineering Technician <br>
+                CST8238 Web Programming <br>
+            </h3>
+        </header>
+        <aside id="menu">
+            <ul>
+                <h4 style="color:white">Navigation Page</h4>
+                <br>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Multimedia.html">Multimedia</a></li>
+                <li><a href="#footer">Resources</a></li>
+            </ul>
+        </aside>
+        <div id="content">
+            <article class="right">
+                <h2>Learning CSS</h2>
+                <br>
+                <h3>How it functions</h3>
+                <p>
+                    CSS stands for <em>cascading style sheets</em>. It is used in conjunction with html to create 
+                    <span style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); color: rgb(128, 128, 128);">style!</span> 
+                    You may have noticed that html on its own looks pretty bland... Not to worry though, because CSS can add attributes 
+                    and their respective properties to html elements such as color or positioning. It achieves this by first specifying a 
+                    selector and then specifying one or more attributes=property pair(s).
+                </p>
+                <dl>
+                    <dt><span style="color:rgb(180, 39, 98)">Contextual Selectors</span></dt>
+                        <dd>
+                            Contextual selectors are used to select html elements based on their tags alone. Specificity can be increased by
+                            including a few operators. Since html uses a parent child model 
+                            (<a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM</a>), we can include operators such as the '>'
+                            bracket to singify a direct child of the parent, '~' to signify any grandchild, or '+' to signify a sibling. 
+                            <br><br>
+                        </dd>
+                    <br>
+                    <dt><span style="color:rgb(180, 39, 98)">Class Selectors</span></dt>
+                        <dd>
+                            Class selectors target html tags which have a class attribute-value matching the name of the CSS class. For 
+                            example, I might declare a CSS class called .violet and then any html tag with class="violet" would inherit the 
+                            properties set in the .violet class, as well as pass them down to each subsequent grandchild.
+                            <br><br>
+                        </dd>
+                    <br>
+                    <dt><span style="color:rgb(180, 39, 98)">Id Selectors</span></dt>
+                        <dd>
+                            The ID selector is very similar to that of the class selector. The ID selector, however, takes precedence over 
+                            class selectors. We can therefor say that it has more <b>"weight"</b> when two attributes conflict within one 
+                            element. ID selectors resemble the syntax of class selectors, but use a hash(#) rather than a period.
+                            <br><br>
+                        </dd>
+                    <br>
+                    <dt><span style="color:rgb(180, 39, 98)">Attribute Selectors</span></dt>
+                        <dd>
+                            Attribute selectors are a bit more strange than the other selectors. Attribute selectors only affect elements 
+                            which share a common tag as well as attribute-value pair as specified in the attribute selector. So for
+                            instance, if a had an image tag with a width of 200px eg. <mark>&lt;img src="..." width="200px"/&gt;</mark> 
+                            then I could operate on it using an attribute selector eg. img[width="200px"] {...}.  
+                            <br><br>
+                        </dd>   
+                    <br>
+                    <dt><span style="color:rgb(180, 39, 98)">Pseudo Selectors</span></dt>
+                        <dd>
+                            Psuedo selectors select an element tag and additionally apply what are called peseudo-classes. Pseudo peseudo-classes
+                            include things like :link which applies to hyperlinks that have not been visited, :hover for when your mouse is 
+                            hovering over the element, :first-child to apply attributes to the first child of the selector, among a few others.
+                            The syntax might look something like: eg. div:first-child {...}.
+                            <br><br>
+                        </dd>
+                </dl>
+            </article>
+            <br>
+            <article class="layout">
+                <h3>Content Boxes</h3>
+                <p>
+                    Every html element has a content area/pane. They are essentially invisible boxes surrounding the element itself. This 
+                    helps with placing content in the correct position! You can also affect the padding, margins and border width/height
+                    to keep text from getting cluttered. 
+                </p>
+                <div>
+                    <p>
+                        Take a look at the border surrounding this text for example! Notice that<br>
+                        even if I break the paragraph early, the border is still nearly twice as<br>
+                        large. This is because I have created a selector that targets all of my<br>
+                        &lt;p&gt; tags and makes their width 45% of the screen size. This is really convenient<br>
+                        because my text will wrap by default rather than me having to manually add<br>
+                        &lt;br&gt; tags everywhere like I currently am.
+                    </p>
+                    <p>
+                        I can also change the default positions of elements. Normally, images would stack on top of each other, following the
+                        natural flow of the webpage. Instead though, I can modify the position attribute along with a few others so that my
+                        images are positioned side by side! 
+                    </p>
+                </div>
+            </article>
+            <br>
+            <figure class="">
+                <img src="tree.jpg" height="325px" width="420px" alt="beauty_tree"/>
+                <img src="lighthouse.jpg" height="325px" width="420px" alt="lighthouse_cliff"/>
+                <img src="sunset.jpg" height="325px" width="420px" alt="sunset"/>
+            </figure> 
+        </div>
+        <footer id="footer">
+            <nav>
+                <small>
+                    040967309<br>
+                    Neil Kingdom<br>
+                    <a href="mailto:king0482@algonquinlive.com">king0482@algonquinlive.com</a>
+                </small>
+            </nav>
+        </footer>
+    </body>
+</html>

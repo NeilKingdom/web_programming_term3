@@ -1,0 +1,63 @@
+#header {
+    top: 0;
+    padding: 25px;
+    background-color: rgb(56, 97, 231);
+}
+
+#footer {
+    height: 10%;
+    width: 100%;
+    padding: 25px; 
+    background-color: rgb(56, 97, 231);
+}
+
+#menu {
+    position: absolute;
+    height: 80%;
+    width: 15%;
+    left: 0;
+    overflow-x: auto;
+    background-color: rgb(60, 124, 241);
+}
+
+#content {
+    padding: 25px;
+    height: 90%;
+    width: 85%;
+    margin-left: 18%;
+}
+
+#content p {
+    width: 45%;
+}
+
+#header>img {
+    float: left;
+}
+
+.right dd {
+    width: 30%;
+    border-bottom: solid 3pt black;
+}
+
+.layout div p:first-child {
+    border: 2pt solid rgb(33, 197, 0);
+}
+
+span[style="color:rgb(180, 39, 98)"] {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color:rgb(255, 255, 255);
+    font-size: 110%;
+}
+
+body {    
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    overflow-x: hidden;
+    background-color: rgb(245, 245, 245);
+}

@@ -1,0 +1,51 @@
+#header {
+    height: 5%;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(98, 98, 98);
+    color: white;
+}
+
+#footer {
+    position: static;
+    bottom: 0; 
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    padding: 2%;
+    background-color: rgb(98, 98, 98);
+    color: white;
+}
+
+#menu {
+    position: absolute;
+    height: 30%;
+    width: 14%;
+    margin: 1%;
+    padding-left: 25px;
+    padding-top: 25px;
+    border-radius: 10px;
+    overflow-x: auto;
+    background-color: rgb(98, 98, 98);
+    color: white;
+}
+
+#content {
+    height: 90%;
+    padding: 50px;
+    margin-left: 17%;
+}
+
+body {    
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}

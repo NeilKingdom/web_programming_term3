@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XML and AJAX</title>
+        <meta charset="utf-8"></meta>
+        <link rel="stylesheet" href="form_style.css">
+        <script>
+            function displayContent(selected) {
+                if(selected == "") {
+                    document.getElementById("text").innerHTML = "";
+                    return;
+                }
+                else {
+                    xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if(this.readyState == 4 && this.status == 200) {
+                            document.getElementById("text").innerHTML = this.responseText;
+                        }
+                    }
+                    xmlhttp.open("GET", "Books.php?q=" + selected, true);
+                    xmlhttp.send();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header id="header">
+            <h1>Computer Engineering Technology - Web Programming<h1>
+        </header>
+
+        <!--MENU-->
+        <nav id="menu">
+            <h2>Menu<h2>
+            <small><a href="Books.html">Home</a></small>
+        </nav>
+
+        <!--FORM-->
+        <div id="content">
+            <form id="form">
+                <label for="menu">Select Your Book Category:</label>
+                <select type="range" form="form" onchange="displayContent(this.value)">
+                    <option value="none" selected disabled hidden> 
+                        Select Book Category 
+                    </option>
+                    <option value="Computer">Computer</option>
+                    <option value="Fantasy">Fanstasy</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                </select>
+                <p id="text"><strong>Books of same category will be listed here</strong></p>
+            </form>
+        </div>
+        <!--FOOTER-->
+        <footer id="footer">
+            <h4>Neil Kingdom<h4>
+            <h5>040967309<h5>
+            <a href="mailto:king0482@algonquinlive.com">king0482@algonquinlive.com</a>
+        </footer>
+    <body>
+</html>

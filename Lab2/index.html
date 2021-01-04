@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en" charset="UTF-8">
+        <title>ELEMENTS OF HTML5</title>
+    </head>
+    <body>
+        <h2>My Novice Website</h2>
+        <br>
+        <article>
+            <h3>Welcome</h3>
+            <p>Welcome to <strong>My Novice Website</strong>. It has all sorts of neat gimicks thanks to html, which is a <em>markup language</em>.<br> This means that it gets read by a special API which interprets the layout of the website.
+            I am able to manipulate <br>this through the use of html tags. These tags help me create elements, of which, there are <i>many</i>. 
+            Here is a list <br>of some of them: </p>
+            <ul>
+                <li><b>Headers (&#60;h1&#62; to &#60;h6&#62;):</b> Headers make your text bold. They are useful for titles and subtitles!</li>
+                <li><b>Paragraphs (&#60;p&#62;):</b> Paragraphs are used for large sections of text.</li>
+                <li><b>Head and body (&#60;head&#62; and &#60;body&#62;):</b> The head tag is used for data that is often unseen by the user. <br>The body tag, on the other hand, is where most of the website's structure resides.</li>
+            </ul>
+        </article>
+        <br>
+        <article>
+            <h3>Neat Elements</h3>
+            <p>In this section, I'd like to show off some fancier elements in html; specifically those which are represented as <br>graphical widgets.</p>
+            <dl>
+                <dt><h5>Meter Element</h5></dt>
+                <dd>The meter element can be used to show the static or dynamic progress of some variable. For example, I <br>could visually represent the amount of lab requirements which have been included thus far.
+                    <br><br>
+                    <label for="statusBar">Percentage of Completed Requirements: </label>
+                    <meter id="statusBar" value="0.66"></meter>
+                </dd>
+                <br>
+                <dt><h5>Progress Element</h5></dt>
+                <dd>The Progress Element is similar to the meter element, though it is intended to represent the progress of <br>some process. A loading bar for example!
+                    <br><br>
+                    <label for="progressBar">Building progress of the Pyramid of Giza:</label>
+                    <progress id="progressBar" value="1"></progress>
+                </dd>
+                <br>
+                <dt><h5>Data List Control</h5></dt>
+                <dd>The Data List Control element is a drop-down menu widget, which allows the user to make a selection from <br>a pool of choices. <br>This selection can then be passed to a Javascript function to process the user's selection.
+                    <br><br>
+                    <label for="dataList">Select the browser you're currently using:</label>
+                    <input list="browsers" name="browser" id="dataList">
+                    <datalist id="browsers">
+                        <option value="Google Chrome">
+                        <option value="Safari">    
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Opera">
+                        <option value="Brave">
+                        <option value="Other...">
+                    </datalist>
+                </dd>
+                <br>
+                <dt><h5>Slider Control</h5></dt>
+                <dd>Slider Control allows the user to drag a slider to select data (returns an integer). It is useful when there is <br>too much data to have in an element such as the data list.
+                    <br><br>
+                    <label id="slider">Volume Control (not really though):</label>
+                    <input type="range" min="1" max="100" value="50" id="slider">
+                </dd>
+                <br>
+                <dt><h5>Calendar Control</h5></dt>
+                <dd>The last graphical element that I'll be showing off is the calendar control element. This is used for selecting <br>dates, naturally!
+                    <br><br>
+                    <label for="calendar">Select your birthday:</label>
+                    <input type="date" name="cal" id="calendar">
+                </dd>
+            </dl>
+        </article>
+        <br>
+        <article>
+            <h3>Other</h3>
+            <p>In this section I will randomly list out my top three favorite mathemetical equations for no particular reason.</p>
+            <ol>
+                <li>Pythegorean Theory: <mark>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></mark></li>
+                <li>Binary Search: <mark>O(log<sub>b</sub>n)</mark></li>
+                <li>Gravitational Pull: <mark>F = G(m<sub>1</sub>m<sub>2</sub>/r<sup>2</sup>)</mark></li>
+            </ol>
+        </article>
+        <br>
+        <article>
+            <footer>
+                <h3>Links</h3>
+                <a href="https://en.wikipedia.org/wiki/HTML"><small>html</small></a> <!--Absolute link-->
+                <br>
+                <a href="public_html/Default.html"><small>error 404</small></a> <!--Relative link-->
+                <br>
+                <a href="mailto://king0482@algonquinlive.com"><small>email</small></a> <!--email link-->
+                <br>
+                <blockquote>
+                    <h6>"The Internet Is Becoming The Town Square For The Global Village Of Tomorrow."<br>-Bill Gates</h6>
+                </blockquote>
+            </footer>
+        </article>
+    </body>
+</html>

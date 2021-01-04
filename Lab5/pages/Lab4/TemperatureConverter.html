@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lab 4</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">    
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+	
+			function convertTemp() {	
+				let unit = '';
+                let num;
+                let newNum;
+                let newUnit
+				while(unit != 'fahrenheit' && unit != 'celsius' && unit != null) {
+                    unit = window.prompt("Please enter the temperature unit that you will be converting (celsius or fahrenheit):");
+                }
+
+                if(unit != null) {
+					while(!isFinite(num)) {
+			        	num = window.prompt("Please enter the value that you will be converting:");
+					}
+			        newNum = num;
+                }
+			    
+			    if(unit === 'fahrenheit') {
+			        newNum -= 32;
+			        newNum /= 1.8;
+					newUnit = 'celsius';
+                    alert(num + " " + unit + " converted to " + newNum + " " + newUnit);
+			    }
+			    else if(unit === 'celsius') {
+			        newNum *= 1.8;
+			        newNum += 32;
+					newUnit = 'fahrenheit';
+                    alert(num + " " + unit + " converted to " + newNum + " " + newUnit);
+			    }
+			}	
+		</script> 
+
+      	<h3>Temperature Converter Using Bootstrap Template</h3> 
+      	<h3>  ------------------------------------------------------</h3>	  
+		<h4>This program converts from Celsius to Fahrenheit and vice versa</h4>
+        <h4>  -------------------------------------------------------------</h4>
+		<h5>Please click Convert button to perform temperature conversion</h5>
+        <h5>  -------------------------------------------------------------</h5>   
+		<table>      
+        	<tr>
+			    <td><input onclick="convertTemp()" name="btnConvert" id="btnConvert" value="Convert!" type="button"></td>				
+		    </tr>       
+        </table>
+    </body>
+</html>
